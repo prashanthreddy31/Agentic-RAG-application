@@ -29,3 +29,4 @@ pydantic>=2.11.7
 
 # Environment and utilities
 python-dotenv>=1.1.1
+sentence-transformers
