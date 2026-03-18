@@ -19,9 +19,6 @@ from agentic_rag_system import AgenticRAGSystem, AgenticRAGConfig
 from dotenv import load_dotenv
 load_dotenv()
 
-if "GROQ_API_KEY" not in st.secrets["GROQ_API_KEY"]:
-    st.error("❌ GROQ API Key is missing. Please set the GROQ_API_KEY environment variable.")
-    st.stop()
 
 groq_api_key = st.secrets["GROQ_API_KEY"]
 tavily_api_key = st.secrets["TAVILY_API_KEY"]
